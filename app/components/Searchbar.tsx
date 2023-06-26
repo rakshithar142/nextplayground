@@ -22,7 +22,7 @@ export default function Searchbar() {
           router.push("/search");
         }}
       >
-        Let's go
+        Let us go
       </button>
     </div>
   );
