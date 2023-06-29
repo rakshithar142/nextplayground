@@ -59,3 +59,7 @@ BEST PRACTICE GIT:
 
 1. Pull code from origin before starting to code and before pushing to origin
 2. Commit working code periodically and EOD 
+
+
+npm install prisma@4.8.1
+npx prisma db push
