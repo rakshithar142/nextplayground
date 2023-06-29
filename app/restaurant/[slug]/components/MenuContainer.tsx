@@ -3,7 +3,6 @@ import MenuCard from "./MenuCard";
 import { Item } from "@prisma/client";
 
 export default function MenuContainer({ menu }: { menu: Item[] }) {
-  console.log(menu);
   return (
     <main className="bg-white mt-5">
       <div>

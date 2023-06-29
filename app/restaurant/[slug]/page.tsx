@@ -32,7 +32,7 @@ const fetchRestaurantBySlug = async (slug: string): Promise<Restaurant> => {
     },
   });
   if (!restaurant) {
-    throw new Error();
+    throw new Error("Cannot find restaurant");
   }
   return restaurant;
 };
@@ -45,11 +45,11 @@ export default async function Restaurant({
   return (
     <>
       <div className="bg-white w-[70%] rounded p-3 shadow">
-        <RestaurantNavBar slug={restaurant.slug}/>
-        <Title title={restaurant.name}/>
+        <RestaurantNavBar slug={restaurant.slug} />
+        <Title title={restaurant.name} />
         <Rating />
-        <Description description={restaurant.description}/>
-        <Images images={restaurant.images}/>
+        <Description description={restaurant.description} />
+        <Images images={restaurant.images} />
         <Reviews />
       </div>
       <div className="w-[27%] relative text-reg">
