@@ -14,6 +14,7 @@ const select = {
   cuisine: true,
   location: true,
   slug: true,
+  reviews: true,
 };
 
 interface SearchParams {
